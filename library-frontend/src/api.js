@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/books"; // Change if needed
+const BASE_URL = "/api/books";
+// const BASE_URL = "http://localhost:8080/books"; // Change if needed for backend
 
 export const getBooks = () => axios.get(BASE_URL);
 export const getBook = (id) => axios.get(`${BASE_URL}/${id}`);
